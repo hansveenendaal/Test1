@@ -13,7 +13,7 @@ $label = $_GET['label'];
 // kan je niet dit neerzetten?: select  count( distinct d.id) as open
 // ***
 
-$sql2 = "select  count(*) as open
+$sql1 = "select  count(*) as open
         from data d,
                  data_label dl
         where d.id = dl.data_id
